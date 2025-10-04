@@ -94,6 +94,13 @@ end-of-stream@^1.1.0:
   dependencies:
     once "^1.4.0"
 
+fast-xml-parser@^4.5.0:
+  version "4.5.3"
+  resolved "https://registry.yarnpkg.com/fast-xml-parser/-/fast-xml-parser-4.5.3.tgz#c54d6b35aa0f23dc1ea60b6c884340c006dc6efb"
+  integrity sha512-RKihhV+SHsIUGXObeVy9AXiBbFwkVk7Syp8XgwN5U3JV416+Gwp/GO9i0JYKmikykgz/UHRrrV4ROuZEo/T0ig==
+  dependencies:
+    strnum "^1.1.1"
+
 get-stream@^5.1.0:
   version "5.2.0"
   resolved "https://registry.yarnpkg.com/get-stream/-/get-stream-5.2.0.tgz#4966a1795ee5ace65e706c4b7beb71257d6e22d3"
@@ -217,20 +224,20 @@ responselike@^2.0.0:
   dependencies:
     lowercase-keys "^2.0.0"
 
-sax@>=0.6.0:
-  version "1.3.0"
-  resolved "https://registry.yarnpkg.com/sax/-/sax-1.3.0.tgz#a5dbe77db3be05c9d1ee7785dbd3ea9de51593d0"
-  integrity sha512-0s+oAmw9zLl1V1cS9BtZN7JAd0cW5e0QH4W3LWEK6a4LaLEA2OTpGYWDY+6XasBLtz6wkm3u1xRw95mRuJ59WA==
-
-sitemapper@^3.2.8:
-  version "3.2.8"
-  resolved "https://registry.yarnpkg.com/sitemapper/-/sitemapper-3.2.8.tgz#ebfdb83c9045c6a57bf3628f564a6ffaeb34259c"
-  integrity sha512-xs1W76bRtJYn6WLQePX1QQaBBjhZgaimu1LbskJ9/8nv71Y+YSM3XRMdLYSiLeObCKuUh45zk+AOUUMKbVMbmg==
+sitemapper@^3.2.24:
+  version "3.3.5"
+  resolved "https://registry.yarnpkg.com/sitemapper/-/sitemapper-3.3.5.tgz#5ed0e25b0500cc248192f48a7791afa0d9dba4be"
+  integrity sha512-z+zuRnbZRwFscWTOsItGh4VCJSKsth8Q4JmoxqBRebGL7Ygs25VMcqlqUafzRQsFVQew8C0IsUvD7yca7jkWzw==
   dependencies:
+    fast-xml-parser "^4.5.0"
     got "^11.8.0"
     is-gzip "2.0.0"
     p-limit "^3.1.0"
-    xml2js "^0.4.23"
+
+strnum@^1.1.1:
+  version "1.1.2"
+  resolved "https://registry.yarnpkg.com/strnum/-/strnum-1.1.2.tgz#57bca4fbaa6f271081715dbc9ed7cee5493e28e4"
+  integrity sha512-vrN+B7DBIoTTZjnPNewwhx6cBA/H+IS7rfW68n7XxC1y7uoiGQBxaKzqucGUgavX15dJgiGztLJ8vxuEzwqBdA==
 
 undici-types@~5.26.4:
   version "5.26.5"
@@ -241,19 +248,6 @@ wrappy@1:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/wrappy/-/wrappy-1.0.2.tgz#b5243d8f3ec1aa35f1364605bc0d1036e30ab69f"
   integrity sha512-l4Sp/DRseor9wL6EvV2+TuQn63dMkPjZ/sp9XkghTEbV9KlPS1xUsZ3u7/IQO4wxtcFB4bgpQPRcR3QCvezPcQ==
-
-xml2js@^0.4.23:
-  version "0.4.23"
-  resolved "https://registry.yarnpkg.com/xml2js/-/xml2js-0.4.23.tgz#a0c69516752421eb2ac758ee4d4ccf58843eac66"
-  integrity sha512-ySPiMjM0+pLDftHgXY4By0uswI3SPKLDw/i3UXbnO8M/p28zqexCUoPmQFrYD+/1BzhGJSs2i1ERWKJAtiLrug==
-  dependencies:
-    sax ">=0.6.0"
-    xmlbuilder "~11.0.0"
-
-xmlbuilder@~11.0.0:
-  version "11.0.1"
-  resolved "https://registry.yarnpkg.com/xmlbuilder/-/xmlbuilder-11.0.1.tgz#be9bae1c8a046e76b31127726347d0ad7002beb3"
-  integrity sha512-fDlsI/kFEx7gLvbecc0/ohLG50fugQp8ryHzMTuW9vSa1GJ0XYWKnhsUx7oie3G98+r56aTQIUB4kht42R3JvA==
 
 yocto-queue@^0.1.0:
   version "0.1.0"
